@@ -1,0 +1,35 @@
+service:
+  name: npm_package_name
+  description: npm_package_description
+  baseUrl: API_DOCS_BASE_URL
+  docsBaseUrl: APP_DOCS_BASE_URL
+  apiVersion: npm_package_version
+  appVersion: npm_package_version
+
+server:
+  host: SERVER_HOST
+  port: SERVER_PORT
+  hostname: SERVER_HOSTNAME
+  swaggerSchema: SWAGGER_SCHEMA
+
+firebase:
+  admin: FIREBASE_ADMIN_CREDENTIALS
+  client: FIREBASE_CLIENT_CREDENTIALS
+
+mongodb:
+  uri: MONGODB_URI
+
+redis:
+  host: REDIS_HOST
+  port: REDIS_PORT
+  password: REDIS_PASSWORD
+
+queue:
+  concurrency: CONCURRENCY_JOB
+  delay: DELAY_JOB
+
+comic:
+  isHideCopyrightedComic: IS_HIDE_COPYRIGHTED_COMIC
+
+api:
+  apiVersion: API_VERSION

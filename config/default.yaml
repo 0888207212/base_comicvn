@@ -1,0 +1,46 @@
+# Default config
+service:
+  name: Comicvn
+  description:
+  baseUrl: /api
+  docsBaseUrl: /docs
+  apiVersion: 0.1.0
+  appVersion: 0.1.0
+
+server:
+  host: 127.0.0.1
+  port: 3000
+  hostname: 127.0.0.1:3000
+  swaggerSchema: http
+
+mongodb:
+  uri: mongodb+srv://admin:secret123@cluster0.j3pgm.mongodb.net/comicvn_prod?retryWrites=true&w=majority
+
+firebase:
+  admin: ""
+  client: ""
+  refreshTokenUrl: "https://securetoken.googleapis.com/v1/token"
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+
+queue:
+  concurrency: 5
+  delay: 5000
+  retryDelay: 300000
+  stepDelay: 1000
+
+comic:
+  isHideCopyrightedComic: true
+
+api:
+  apiVersion: 4
+  apiAndroidVersion: 8
+  apiIosVersion: 4
+
+dynamicContent:
+  invisibleAll: false
+  invisibleAndroid: false
+  invisibleIos: false

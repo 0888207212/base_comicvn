@@ -1,0 +1,23 @@
+version: '3'
+services:
+ mongo1:
+   hostname: mongodb
+   container_name: mongodb
+   image: mongo:4.4
+   volumes:
+     - ./.docker/mongodb/db:/data/db
+     - ./.docker/mongodb/configdb:/data/configdb
+   expose:
+     - "27017"
+   ports:
+     - "27017:27017"
+   restart: always
+ redis:
+   restart: always
+   image: redis:latest
+   expose:
+     - "6379"
+   ports:
+     - "16379:6379"
+   volumes:
+     - ./.docker/redis:/data
